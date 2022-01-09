@@ -1,0 +1,38 @@
+{
+  "name": "PacMan Test #2",
+  "symbol": "PM",
+  "description": "PacMan Test Desc",
+  "seller_fee_basis_points": 250,
+  "image": "image.png",
+  "external_url": "https://www.caldlabsnft.com",
+  "edition": 2,
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Ultra_Rare"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Yellow"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Circle"
+    }
+  ],
+  "properties": {
+    "files": [
+      {
+        "uri": "image.png",
+        "type": "image/png"
+      }
+    ],
+    "category": "image",
+    "creators": [
+      {
+        "address": "6xwVtRrCTXEToMm6oCriDVhUHamHCkXcVHuRkY1dLC4e",
+        "share": 100
+      }
+    ]
+  }
+}

@@ -342,7 +342,11 @@ programCommand('verify_upload')
     'custom rpc url since this is a heavy command',
   )
   .action(async (directory, cmd) => {
-    const { env, keypair, rpcUrl, cacheName } = cmd.opts();
+    let { env, keypair, rpcUrl, cacheName } = cmd.opts();
+
+    console.log(cacheName)
+    console.log(env)
+    cacheName="example3"
 
     const cacheContent = loadCache(cacheName, env);
     const walletKeyPair = loadWalletKey(keypair);
@@ -483,8 +487,11 @@ programCommand('show')
     'custom rpc url since this is a heavy command',
   )
   .action(async (directory, cmd) => {
-    const { keypair, env, cacheName, rpcUrl, cachePath } = cmd.opts();
+    let { keypair, env, cacheName, rpcUrl, cachePath } = cmd.opts();
 
+    console.log(cacheName)
+    console.log(env)
+    cacheName="example3"
     const cacheContent = loadCache(cacheName, env, cachePath);
 
     if (!cacheContent) {

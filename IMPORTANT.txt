@@ -1,0 +1,23 @@
+pubkey: 6xwVtRrCTXEToMm6oCriDVhUHamHCkXcVHuRkY1dLC4e
+recovery phrase: figure rose media bid flush carry journey smooth snow intact dance urge
+pw: 123
+
+OLD: candy machine with publickey: 3LfMeBUqMiJtYwdjFeLEe2rny8aGwpGR7JjkonjbTrHJ
+OLD2: candy machine with publickey: 7HzLnXsDUQ2AsiFT2Xt47NnGJcAQ7HkCdezirfLCtKiy
+OLD3: candy machine with publickey: 4xHxjGEyK9N2ijb48FzgBukYULJ6Bsu1hZ9dz3zB9eVg
+NEW: EuVtrGeFFRwG9dXCeRr9Z3q29Dn57AJhcjVV93HwEtPN
+
+CALDLABS MACHINE KEY: Cc5DXSPFyLWW21p3Mqq614pc6VHAHLKYQiksuiyUqTkA
+
+ts-node js/packages/cli/src/candy-machine-v2-cli.ts upload -e devnet -k .config/solana/devnet-test.json -cp js/packages/cli/candy-config.json -c example2 assets
+
+ts-node js/packages/cli/src/candy-machine-v2-cli.ts update_candy_machine -e devnet -k .config/solana/devnet-test.json -cp js/packages/cli/candy-config.json -c example2 assets
+
+ts-node js/packages/cli/src/candy-machine-v2-cli.ts verify_upload -e devnet -k .config/solana/devnet-test.json -c example1 -cp js/packages/cli/candy-config.json -c example1
+
+ts-node js/packages/cli/src/candy-machine-v2-cli.ts update_candy_machine -e devnet -k .config/solana/devnet-test.json -cp js/packages/cli/candy-config.json
+
+  "gatekeeper": {
+    "gatekeeperNetwork": "ignREusXmGrscGNUesoU9mxfds9AiYTezUKex2PsZV6",
+    "expireOnUse": true
+  },
